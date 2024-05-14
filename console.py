@@ -111,7 +111,7 @@ class HBNBCommand(cmd.Cmd):
             print("** class name missing **")
             return
         class_name = args[0]
-        if class_name not in models.storage.classes():
+        if class_name not in models.storage.classes:
             print("** class doesn't exist **")
             return
         if len(args) < 2:

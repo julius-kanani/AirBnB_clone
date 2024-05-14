@@ -5,15 +5,13 @@ import json
 from models.base_model import BaseModel
 
 
-classes = {"BaseModel": BaseModel}
-
-
 class FileStorage:
     """
     Serializes instances to a JSON file and deserializes JSON file to
     instances.
     """
 
+    classes = {"BaseModel": BaseModel}
     __file_path = "file.json"
     __objects = {}
 
@@ -55,7 +53,7 @@ class FileStorage:
                 loaded_objects = json.load(file)
                 for key, obj_dict in loaded_objects.items():
                     class_name, obj_id = key.split('.')
-                    cls = classes[class_name]
+                    cls = FileStorage.classes[class_name]
                     obj = cls(**obj_dict)
                     FileStorage.__objects[key] = obj
         except FileNotFoundError:
