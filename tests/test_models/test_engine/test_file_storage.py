@@ -8,6 +8,10 @@ from models.base_model import BaseModel
 
 
 class TestFileStorage(unittest.TestCase):
+    """
+    TestFileStorage class with unittest cases for the file_storage module.
+    """
+
     def setUp(self):
         """Set up test environment."""
         self.file_path = "test_file.json"
