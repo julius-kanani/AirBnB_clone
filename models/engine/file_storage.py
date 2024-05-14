@@ -3,6 +3,7 @@
 import importlib
 import json
 from models.base_model import BaseModel
+from models.user import User
 
 
 class FileStorage:
@@ -11,7 +12,7 @@ class FileStorage:
     instances.
     """
 
-    classes = {"BaseModel": BaseModel}
+    classes = {"BaseModel": BaseModel, "User": User}
     __file_path = "file.json"
     __objects = {}
 
