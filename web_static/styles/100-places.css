@@ -77,3 +77,65 @@
   padding-top: 60px;
   text-align: center;
 }
+
+article .lamenities {
+  margin-top: 40px;
+}
+
+article .lamenities h2 {
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 10px;
+}
+
+article .lamenities ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lamenities li {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding-left: 25px;
+  height: 30px;
+}
+
+article .lamenities ul li:nth-child(1) {
+  background: url("../images/icon_tv.png") 0 0 / 20px 30px no-repeat;
+}
+article .lamenities ul li:nth-child(2) {
+  background: url("../images/icon_wifi.png") 0 0 / 20px 30px no-repeat;
+}
+article .lamenities ul li:nth-child(3) {
+  background: url("../images/icon_pets.png") 0 0 / 20px 30px no-repeat;
+}
+
+article .reviews {
+  margin-top 40px;
+}
+
+article .reviews h2 {
+  font-size: 16px;
+  border-bottom: 1px solid #DDDDDD;
+  text-align: left;
+}
+
+.reviews ul {
+  padding: 0;
+}
+
+.reviews ul li {
+  list-style-type: none;
+}
+
+.reviews ul li h3 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.reviews ul li p {
+  font-size: 12px;
+  margin: 0;
+}
